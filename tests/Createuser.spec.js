@@ -19,7 +19,7 @@ test('Login test and Add User', async ({ page }) => {
   await page.getByRole('link', { name: 'Manage User' }).click();
   await page.getByRole('link', { name: 'Add New User' }).click();
   await page.getByPlaceholder('Type User Name').click();
-  await page.getByPlaceholder('Type User Name').fill('ca20@gmail.com');
+  await page.getByPlaceholder('Type User Name').fill('ca22@gmail.com');
   await page.getByPlaceholder('********').first().click();
   await page.getByPlaceholder('********').first().fill('Asdfg098@');
   await page.getByPlaceholder('********').nth(1).click();
