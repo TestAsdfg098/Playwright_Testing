@@ -28,7 +28,7 @@ test('Login test and Add User', async ({ page }) => {
   await page.getByPlaceholder('Type Your Email').click();
   await page.getByPlaceholder('Type Your Email').fill('import { test, expect } from \'@playwright/test\';  test(\'Login test\', async ({ page }) => {   test.setTimeout(60000);  // Set timeout to 60 seconds      // Navigate to the login page   await page.goto(\'https://dev2.innotech-sa.com/AssessmentSystemV2/Master/System/UserManager/Login\');      // Fill in the username and password   await page.getByPlaceholder(\'User name\').click();   await page.getByPlaceholder(\'User name\').fill(\'ca_kingfaisal\');   await page.getByPlaceholder(\'Password\').click();   await page.getByPlaceholder(\'Password\').fill(\'Asdfg098@\');      // Click the login button   await page.getByRole(\'button\', { name: \'Login\' }).click();      // Optional: Pause the test for debugging   await page.pause();  // Fix: Missing parentheses to invoke the function });');
   await page.getByPlaceholder('Type Your Email').press('ControlOrMeta+a');
-  await page.getByPlaceholder('Type Your Email').fill('ca20@gmail.com');
+  await page.getByPlaceholder('Type Your Email').fill('ca26@gmail.com');
   await page.locator('a').filter({ hasText: 'Select an option' }).click();
   await page.waitForTimeout(10000);
   await page.locator('#ddlSalutation_chosen').getByText('Mrs.').click();
